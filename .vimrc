@@ -8,6 +8,7 @@ set incsearch           " Enable incremental search
 set ignorecase          " Ignore case when using a search pattern
 set smartcase           " Overrise 'ignorecase' for uppercase patterns
 set wildmenu            " Enable command-line completion
+set pastetoggle=<F12>   " Make F12 toggle paste mode
 colorscheme molokai     " User the 'molokai' theme
 set grepprg=grep\ -nH\ $* " Make grep always generate a file name
 

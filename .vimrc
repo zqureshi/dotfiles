@@ -11,6 +11,7 @@ set wildmenu            " Enable command-line completion
 set pastetoggle=<F12>   " Make F12 toggle paste mode
 colorscheme molokai     " User the 'molokai' theme
 set grepprg=grep\ -nH\ $* " Make grep always generate a file name
+set backspace=indent,eol,start " Allow backspace over everything
 
 "" Tabs and Spaces
 set expandtab           " Expand tabs to spaces

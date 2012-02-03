@@ -1,4 +1,5 @@
 ## General
+#PS1='[\u@\h \W]\$ '
 bind '"\t":menu-complete'
 shopt -s cdspell
 shopt -s nocaseglob
@@ -6,18 +7,17 @@ shopt -s nocaseglob
 ## Variables
 export TERM='xterm-256color'
 export EDITOR='vim'
-export JAVA_HOME='/usr/lib/jvm/java-6-sun/'
 
 ## Custom Aliases
+alias pacman='sudo pacman'
+alias ls='ls --color'
+alias R='R --vanilla --silent'
+
+
+## SSH
 alias ted='ssh zqureshi@teddie.socis.ca'
 alias cdf='ssh g0zee@greywolf.cdf.toronto.edu'
 alias cslab='ssh g0zee-cdf@wifi.cs.toronto.edu'
-alias R='R --vanilla --silent'
-alias bananajour='/var/lib/gems/1.9.1/bin/bananajour'
-alias mvn='/home/zeeshan/.opt/maven/bin/mvn'
-
-## Add GHC and Haskell-platform to path
-export PATH='/opt/haskell-platform/bin/:/opt/ghc/bin/:'$PATH
 
 ## SOCKS Proxy to tEddie via a tunnel through CDF
 function tunnel {
@@ -68,6 +68,3 @@ function aws-tunnel {
   # Notify user
   echo "Tunnel Setup"
 }
-
-## RVM Configuration
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function

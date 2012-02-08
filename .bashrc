@@ -1,5 +1,7 @@
+## Prompt
+PS1='[\e[0;32m\]\u@\h \[\e[1;34m\]\W\[\e[0m\]]\$ '
+
 ## General
-#PS1='[\u@\h \W]\$ '
 bind '"\t":menu-complete'
 shopt -s cdspell
 shopt -s nocaseglob
@@ -7,6 +9,7 @@ shopt -s nocaseglob
 ## Variables
 export TERM='xterm-256color'
 export EDITOR='vim'
+export LESS='-I -R'
 
 ## Custom Aliases
 alias pacman='sudo pacman'

@@ -1,4 +1,5 @@
 ## General
+defscrollback 5000
 
 # Set terminal to support 256 colors
 term xterm-256color

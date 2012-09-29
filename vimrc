@@ -41,9 +41,14 @@ autocmd FileType make setlocal noexpandtab
 " Enable specific indetation for C code
 autocmd FileType c set cindent
 
-"" Enable LaTeX and set target format to pdf
+" Indent 4 spaces for LaTeX files
+autocmd FileType tex set shiftwidth=4
+autocmd FileType tex set softtabstop=4
+autocmd FileType tex set tabstop=4
+
+"" Enable LaTeX and set target format to dvi
 let g:tex_flavor = "latex"
-let g:Tex_DefaultTargetFormat = "pdf"
+let g:Tex_DefaultTargetFormat = "dvi"
 
 "" Plugin Settings
 

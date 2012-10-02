@@ -39,12 +39,12 @@ autocmd FileType lisp runtime plugin/RainbowParanthesis.vim
 autocmd FileType make setlocal noexpandtab
 
 " Enable specific indetation for C code
-autocmd FileType c set cindent
+autocmd FileType c setlocal cindent
 
 " Indent 4 spaces for LaTeX files
-autocmd FileType tex set shiftwidth=4
-autocmd FileType tex set softtabstop=4
-autocmd FileType tex set tabstop=4
+autocmd FileType tex setlocal shiftwidth=4
+autocmd FileType tex setlocal softtabstop=4
+autocmd FileType tex setlocal tabstop=4
 
 "" Enable LaTeX and set target format to dvi
 let g:tex_flavor = "latex"

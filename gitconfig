@@ -1,0 +1,11 @@
+[color]
+	ui = always
+[user]
+	name = Zeeshan Qureshi
+	email = zee@zqureshi.in
+[branch]
+	autosetuprebase = always
+[push]
+	default = matching
+[log]
+	decorate = short

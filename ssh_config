@@ -1,0 +1,12 @@
+## Global
+TCPKeepAlive yes
+
+# CDF Configuration
+Host cdf
+HostName cdf.toronto.edu
+User g0zee
+
+# CDF Wifi Configuration
+Host cslab
+HostName wifi.cs.toronto.edu
+User g0zee-cdf

@@ -10,3 +10,8 @@ User g0zee
 Host cslab
 HostName wifi.cs.toronto.edu
 User g0zee-cdf
+
+# Jaideep server
+Host jd
+HostName 192.168.1.112
+User jaideep

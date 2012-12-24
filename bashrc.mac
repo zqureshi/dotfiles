@@ -1,7 +1,0 @@
-## General
-bind '"\t":menu-complete'
-shopt -s cdspell
-shopt -s nocaseglob
-
-## Custom Aliases
-alias ls='ls -G'

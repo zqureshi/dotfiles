@@ -21,11 +21,27 @@ source $ZSH/oh-my-zsh.sh
 setopt menu_complete
 unsetopt correct_all
 
+## Determine System
+if [ `uname -s` = 'Darwin' ]; then
+  SYSTEM='MAC'
+else
+  SYSTEM='LINUX'
+fi
+
 ## Variables
 export TERM='xterm-256color'
 export EDITOR='vim'
 export LESS='-I -R'
 
 ## Custom Aliases
-alias ls='ls --color'
-alias R='R --vanilla --silent'
+if [ "$SYSTEM" != 'MAC' ]; then
+  alias ls='ls --color'
+  alias R='R --vanilla --silent'
+else
+  # System is a Mac
+  # Prefer Homebrew binaries to system
+  export PATH="/usr/local/bin:$PATH"
+
+  # Enable CLI Colouring
+  export CLICOLOR=1
+fi

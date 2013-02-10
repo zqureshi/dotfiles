@@ -9,3 +9,8 @@
 	default = matching
 [log]
 	decorate = short
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch

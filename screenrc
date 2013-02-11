@@ -23,3 +23,5 @@ backtick 1 5 5 true
 # Display current directory and shell at bottom
 caption always "%{= bb}%{+b w}%n %h %=%t %c"
 hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+# Clear screen on exiting vim
+altscreen on

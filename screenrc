@@ -13,5 +13,13 @@ termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 defbce on
 # disable startup message
 startup_message off
-# enable caption bar at bottom
-caption always
+# start with visual bell as default
+vbell on
+vbell_msg "bell on %t (%n)"
+# activity message
+activity "Activity in %t(%n)"
+# enable dynamic refresh of % string escape
+backtick 1 5 5 true
+# Display current directory and shell at bottom
+caption always "%{= bb}%{+b w}%n %h %=%t %c"
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"

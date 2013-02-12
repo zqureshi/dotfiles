@@ -58,9 +58,6 @@ let g:Tex_DefaultTargetFormat = "dvi"
 
 "" Plugin Settings
 
-" Pandoc Settings
-let g:pandoc_no_folding = 1
-
 " Customize zencoding for specific files
 let g:user_zen_settings = {
 \  'php' : {

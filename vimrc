@@ -1,3 +1,6 @@
+"" Load Pathogen
+execute pathogen#infect()
+
 "" General
 set nocompatible        " Get out of vi compatibility mode
 set encoding=utf-8      " Explicitly set encoding to Unicode

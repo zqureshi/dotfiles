@@ -29,6 +29,7 @@ syntax enable           " Enable syntax highlighting
 filetype plugin on      " Enable file specific plugins
 filetype indent on      " Enable type specific indentation
 set formatoptions+=ro   " Continue comment on next line
+set foldlevel=100       " Keep all folds open by default
 
 "" FileType specific settings
 

@@ -6,7 +6,7 @@
 [branch]
 	autosetuprebase = always
 [push]
-	default = matching
+	default = upstream
 [log]
 	decorate = short
 [alias]

@@ -1,0 +1,61 @@
+---
+-
+  hosts: all
+  user: root
+
+  tasks:
+  -
+    name: Upgrade all packages
+    apt: upgrade=full update-cache=yes
+
+  -
+    name: Install core packages
+    apt: pkg=screen,htop,vim,git,zsh,zsh-doc
+
+  -
+    name: Install GNU toolchain
+    apt: pkg=gcc,g++,make,cmake
+
+  -
+    name: Install debugging tools
+    apt: pkg=gdb,valgrind
+
+  -
+    name: Install python headers
+    apt: pkg=python-dev
+
+  -
+    name: Install pip
+    apt: pkg=python-pip
+
+  -
+    name: Install python utils
+    pip: name={{ item }}
+    with_items:
+      - virtualenv
+      - ipython
+      - fabric
+      - httpie
+
+  -
+    name: Clone oh-my-zsh
+    git: repo=https://github.com/robbyrussell/oh-my-zsh.git
+         dest=~/.oh-my-zsh
+
+  -
+    name: Clone zsh-syntax-highlighting
+    git: repo=https://github.com/zsh-users/zsh-syntax-highlighting.git
+         dest=~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+  -
+    name: Clone dotfiles
+    git: repo=https://github.com/zqureshi/dotfiles.git
+         dest=~/.dotfiles
+
+  -
+    name: Link dotfiles
+    shell: chdir=~/.dotfiles fab link:force
+
+  -
+    name: Set zsh as default shell
+    user: name={{ ansible_ssh_user }} shell=/bin/zsh

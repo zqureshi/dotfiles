@@ -1,6 +1,9 @@
 ## General
 defscrollback 5000
 
+# ZSH is defoult shell
+defshell zsh
+
 # Set terminal to support 256 colors
 term xterm-256color
 

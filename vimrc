@@ -49,17 +49,3 @@ autocmd FileType c setlocal cindent
 autocmd FileType python setlocal nosmartindent
 
 "" Plugin Settings
-
-" Customize zencoding for specific files
-let g:user_zen_settings = {
-\  'php' : {
-\    'extends' : 'html',
-\    'filters' : 'c',
-\  },
-\  'xml' : {
-\    'extends' : 'html',
-\  },
-\  'haml' : {
-\    'extends' : 'html',
-\  },
-\}

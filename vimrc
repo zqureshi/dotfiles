@@ -45,17 +45,8 @@ autocmd FileType make setlocal noexpandtab
 " Enable specific indetation for C code
 autocmd FileType c setlocal cindent
 
-" Indent 4 spaces for LaTeX files
-autocmd FileType tex setlocal shiftwidth=4
-autocmd FileType tex setlocal softtabstop=4
-autocmd FileType tex setlocal tabstop=4
-
 " Disable smartindent for python since it doesn't work well with comments
 autocmd FileType python setlocal nosmartindent
-
-"" Enable LaTeX and set target format to dvi
-let g:tex_flavor = "latex"
-let g:Tex_DefaultTargetFormat = "dvi"
 
 "" Plugin Settings
 

@@ -52,6 +52,10 @@ noremap <silent> <F3> :bnext<CR>
 " Quickly edit vimrc
 noremap <silent> ,v :e $MYVIMRC<CR>
 
+" Quickly switch between tabs
+noremap <silent> <Tab> :tabnext<CR>
+noremap <silent> <S-Tab> :tabprev<CR>
+
 "" FileType specific settings
 
 " Treat .ss and .rkt files as lisp

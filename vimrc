@@ -43,6 +43,15 @@ filetype indent on      " Enable type specific indentation
 set formatoptions+=ro   " Continue comment on next line
 set foldlevel=100       " Keep all folds open by default
 
+"" Key Mappings
+
+" Map <F2> <F3> to go to prev/next buffers
+noremap <silent> <F2> :bprev<CR>
+noremap <silent> <F3> :bnext<CR>
+
+" Quickly edit vimrc
+noremap <silent> ,v :e $MYVIMRC<CR>
+
 "" FileType specific settings
 
 " Treat .ss and .rkt files as lisp

@@ -1,5 +1,17 @@
-"" Load Pathogen
-execute pathogen#infect()
+"" Vundle
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Bundles
+Bundle 'natduca/quickopen'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'Valloric/YouCompleteMe'
 
 "" General
 set nocompatible        " Get out of vi compatibility mode

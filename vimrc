@@ -12,6 +12,8 @@ Bundle 'gmarik/vundle'
 Bundle 'natduca/quickopen'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
 
 "" General
 set nocompatible        " Get out of vi compatibility mode
@@ -75,3 +77,7 @@ autocmd FileType c setlocal cindent
 autocmd FileType python setlocal nosmartindent
 
 "" Plugin Settings
+
+" VIM Airline
+set laststatus=2        " Always display the status line
+set ttimeoutlen=50      " Quickly update on leaving insert mode

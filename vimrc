@@ -77,3 +77,5 @@ autocmd FileType python setlocal nosmartindent
 " VIM Airline
 set laststatus=2        " Always display the status line
 set ttimeoutlen=50      " Quickly update on leaving insert mode
+let g:bufferline_echo=0 " Only show buffers in status line
+let g:airline_theme='badwolf'  " Use a theme in contrast with molokai

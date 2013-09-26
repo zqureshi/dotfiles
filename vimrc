@@ -47,17 +47,13 @@ set foldlevel=100       " Keep all folds open by default
 
 "" Key Mappings
 
-" Map <F2> <F3> to go to prev/next buffers
-noremap <silent> <F2> :bprev<CR>
-noremap <silent> <F3> :bnext<CR>
+" Use tab to change buffers
+noremap <silent> <Tab> :bnext<CR>
+noremap <silent> <S-Tab> :bprev<CR>
 
 " Quickly edit vimrc, zshrc
 noremap <silent> ,v :e $MYVIMRC<CR>
 noremap <silent> ,z :e $HOME/.zshrc<CR>
-
-" Quickly switch between tabs
-noremap <silent> <Tab> :tabnext<CR>
-noremap <silent> <S-Tab> :tabprev<CR>
 
 "" FileType specific settings
 

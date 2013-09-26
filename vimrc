@@ -49,8 +49,9 @@ set foldlevel=100       " Keep all folds open by default
 noremap <silent> <F2> :bprev<CR>
 noremap <silent> <F3> :bnext<CR>
 
-" Quickly edit vimrc
+" Quickly edit vimrc, zshrc
 noremap <silent> ,v :e $MYVIMRC<CR>
+noremap <silent> ,z :e $HOME/.zshrc<CR>
 
 " Quickly switch between tabs
 noremap <silent> <Tab> :tabnext<CR>

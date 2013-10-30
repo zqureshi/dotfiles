@@ -52,6 +52,9 @@ set foldlevel=100       " Keep all folds open by default
 noremap <silent> <Tab> :bnext!<CR>
 noremap <silent> <S-Tab> :bprev!<CR>
 
+" Delete current buffer without closing split
+noremap <silent> ,c :bprev <bar> :bdel #<CR>
+
 " Quickly edit vimrc, zshrc
 noremap <silent> ,v :e $MYVIMRC<CR>
 noremap <silent> ,z :e $HOME/.zshrc<CR>

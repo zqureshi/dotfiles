@@ -49,8 +49,8 @@ set foldlevel=100       " Keep all folds open by default
 "" Key Mappings
 
 " Use tab to change buffers
-noremap <silent> <Tab> :bnext<CR>
-noremap <silent> <S-Tab> :bprev<CR>
+noremap <silent> <Tab> :bnext!<CR>
+noremap <silent> <S-Tab> :bprev!<CR>
 
 " Quickly edit vimrc, zshrc
 noremap <silent> ,v :e $MYVIMRC<CR>

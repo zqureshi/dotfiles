@@ -33,7 +33,28 @@ export TERM='xterm-256color'
 export EDITOR='vim'
 export LESS='-I -R'
 
-## Custom Aliases
+## Aliases
+
+# General
+alias -g ack='ack-grep'
+alias pd='pushd'
+alias v='vim'
+
+# Git
+alias g='git'
+alias l='git log'
+alias m='git co master'
+alias lm='git log master'
+alias st='git st'
+alias br='git br'
+alias co='git co'
+alias di='git di'
+alias dc='git dc'
+alias ci='git ci'
+alias add='git add'
+alias brv='git br -vv'
+
+# Mac
 if [ "$SYSTEM" != 'MAC' ]; then
   alias ls='ls --color'
   alias R='R --vanilla --silent'

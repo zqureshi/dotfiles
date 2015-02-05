@@ -66,3 +66,8 @@ else
   # Enable CLI Colouring
   export CLICOLOR=1
 fi
+
+# Moooo
+if [[ -o login ]]; then
+  (fortune -s | cowsay | lolcat) 2>/dev/null
+fi

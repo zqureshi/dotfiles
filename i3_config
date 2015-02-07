@@ -29,6 +29,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 # lock screen
 bindsym $mod+Control+l exec i3lock -c 000000 -d
 
+# volume
+bindsym XF86AudioMute exec pactl set-sink-mute 1 -- toggle
+
 # kill focused window
 bindsym $mod+Shift+q kill
 

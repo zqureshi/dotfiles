@@ -150,3 +150,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Hangouts
+for_window [window_role="^pop-up$"] floating enable

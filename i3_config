@@ -31,6 +31,8 @@ bindsym $mod+Control+l exec i3lock -c 000000 -d
 
 # volume
 bindsym XF86AudioMute exec pactl set-sink-mute 1 -- toggle
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -- -5%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 -- +5%
 
 # kill focused window
 bindsym $mod+Shift+q kill

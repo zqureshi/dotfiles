@@ -153,3 +153,6 @@ bar {
 
 # Hangouts
 for_window [window_role="^pop-up$"] floating enable
+
+# Close with middle mouse
+bindsym button2 kill

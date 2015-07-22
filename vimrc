@@ -9,7 +9,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles
-Bundle 'natduca/quickopen'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'bling/vim-airline'

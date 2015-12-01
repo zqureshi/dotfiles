@@ -51,7 +51,6 @@ function _tm() {
 ## Aliases
 
 # General
-alias -g ack='ack-grep'
 alias pd='pushd'
 alias v='vim'
 alias tm=_tm

@@ -81,6 +81,9 @@ else
 
   # Enable CLI Colouring
   export CLICOLOR=1
+
+  # Java for data team.
+  export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 fi
 
 # Moooo

@@ -1,18 +1,19 @@
-"" Vundle
-set nocompatible
-filetype off
+" Load vim-plug
+if empty(glob("~/.vim/autoload/plug.vim"))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+call plug#begin('~/.vim/bundle')
 
-" Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+" Plugins
+Plug 'bling/vim-airline'
+Plug 'bling/vim-bufferline'
+Plug 'scrooloose/nerdcommenter'
+Plug 'Valloric/YouCompleteMe',
+  \ {'do': './install.py'}
 
-" Bundles
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'bling/vim-airline'
-Bundle 'bling/vim-bufferline'
+call plug#end()
 
 "" General
 set nocompatible        " Get out of vi compatibility mode

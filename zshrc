@@ -53,6 +53,7 @@ alias dc='git dc'
 alias ci='git ci'
 alias add='git add'
 alias brv='git br -vv'
+alias amend='git commit --amend --no-edit'
 
 # Mac
 if [ "$SYSTEM" != 'MAC' ]; then

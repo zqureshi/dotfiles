@@ -97,6 +97,7 @@ else
 
   # chruby version manager
   source /usr/local/opt/chruby/share/chruby/chruby.sh
+  chruby ruby-2.1.3
 fi
 
 # Moooo

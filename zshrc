@@ -94,6 +94,9 @@ else
 
   # Java for data team.
   export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+  # chruby version manager
+  source /usr/local/opt/chruby/share/chruby/chruby.sh
 fi
 
 # Moooo

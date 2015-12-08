@@ -48,6 +48,15 @@ function _tm() {
   tmux new -A -s "$SESSION"
 }
 
+function _clone() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: clone shopify_repo"
+    return
+  fi
+
+  git clone git@github.com:Shopify/$1
+}
+
 ## Aliases
 
 # General
@@ -69,6 +78,7 @@ alias ci='git ci'
 alias add='git add'
 alias brv='git br -vv'
 alias amend='git commit --amend --no-edit'
+alias clone='_clone'
 
 # Mac
 if [ "$SYSTEM" != 'MAC' ]; then

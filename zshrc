@@ -57,6 +57,10 @@ function _clone() {
   git clone git@github.com:Shopify/$1
 }
 
+function _agent() {
+  pkill -kill -f 'ssh-agent' && eval "$(ssh-agent -s)"
+}
+
 ## Aliases
 
 # General
@@ -79,6 +83,7 @@ alias add='git add'
 alias brv='git br -vv'
 alias amend='git commit --amend --no-edit'
 alias clone='_clone'
+alias agent='_agent'
 
 # Mac
 if [ "$SYSTEM" != 'MAC' ]; then

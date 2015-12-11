@@ -72,6 +72,7 @@ alias tm=_tm
 alias g='git'
 alias l='git log'
 alias m='git co master'
+alias p='g pr'
 alias lm='git log master'
 alias st='git st'
 alias br='git br'

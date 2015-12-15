@@ -67,7 +67,13 @@ function _pretty_json() {
     return
   fi
 
-  cat "$1" | python -m json.tool
+  if [[ "${1:e}" == "gz" ]]; then
+    CAT_TOOL='gzcat'
+  else
+    CAT_TOOL='cat'
+  fi
+
+  $CAT_TOOL "$1" | python -m json.tool
 }
 
 ## Aliases

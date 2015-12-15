@@ -61,12 +61,22 @@ function _agent() {
   pkill -kill -f 'ssh-agent' && eval "$(ssh-agent -s)"
 }
 
+function _pretty_json() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: j json_file"
+    return
+  fi
+
+  cat "$1" | python -m json.tool
+}
+
 ## Aliases
 
 # General
 alias pd='pushd'
 alias v='vim'
 alias tm=_tm
+alias agent='_agent'
 
 # Git
 alias g='git'
@@ -84,7 +94,9 @@ alias add='git add'
 alias brv='git br -vv'
 alias amend='git commit --amend --no-edit'
 alias clone='_clone'
-alias agent='_agent'
+
+# Viewing Data
+alias j='_pretty_json'
 
 # Mac
 if [ "$SYSTEM" != 'MAC' ]; then

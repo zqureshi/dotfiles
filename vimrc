@@ -8,6 +8,8 @@ call plug#begin('~/.vim/bundle')
 
 " Plugins
 Plug 'bling/vim-bufferline'
+Plug 'rstacruz/sparkup',
+  \ {'for': 'html'}
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/YouCompleteMe',

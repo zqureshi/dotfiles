@@ -9,6 +9,7 @@ call plug#begin('~/.vim/bundle')
 " Plugins
 Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
 Plug 'Valloric/YouCompleteMe',
   \ {'do': './install.py'}
 Plug 'vim-airline/vim-airline'

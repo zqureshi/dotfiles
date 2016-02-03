@@ -7,11 +7,12 @@ endif
 call plug#begin('~/.vim/bundle')
 
 " Plugins
-Plug 'bling/vim-airline'
 Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe',
   \ {'do': './install.py'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 

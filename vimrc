@@ -82,6 +82,11 @@ autocmd FileType c setlocal cindent
 " Disable smartindent for python since it doesn't work well with comments
 autocmd FileType python setlocal nosmartindent
 
+"" Commands
+
+" Quickopen style shortcut for FZF
+command O :FZF
+
 "" Plugin Settings
 
 " VIM Airline

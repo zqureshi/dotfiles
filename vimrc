@@ -8,6 +8,8 @@ call plug#begin('~/.vim/bundle')
 
 " Plugins
 Plug 'bling/vim-bufferline'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'rstacruz/sparkup',
   \ {'for': 'html'}
 Plug 'scrooloose/nerdcommenter'

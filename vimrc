@@ -13,6 +13,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'rstacruz/sparkup',
   \ {'for': 'html'}
 Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/YouCompleteMe',
   \ {'do': './install.py'}
@@ -81,6 +82,9 @@ autocmd FileType c setlocal cindent
 
 " Disable smartindent for python since it doesn't work well with comments
 autocmd FileType python setlocal nosmartindent
+
+" Toggle NERDTree file browser
+noremap <silent> <C-n> :NERDTreeToggle<CR>
 
 "" Commands
 

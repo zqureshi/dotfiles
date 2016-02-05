@@ -59,6 +59,10 @@ set foldlevel=100       " Keep all folds open by default
 noremap <silent> <Tab> :bnext!<CR>
 noremap <silent> <S-Tab> :bprev!<CR>
 
+" Navigate splits easily
+noremap <silent> <C-l> <C-w>l
+noremap <silent> <C-h> <C-w>h
+
 " Delete current buffer without closing split
 noremap <silent> ,c :bprev <bar> :bdel #<CR>
 

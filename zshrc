@@ -122,6 +122,10 @@ else
   # chruby version manager
   source /usr/local/opt/chruby/share/chruby/chruby.sh
   source /usr/local/opt/chruby/share/chruby/auto.sh
+
+  # virtualenv locations
+  export WORKON_HOME='~/.virtualenvs'
+  source $(brew --prefix)/bin/virtualenvwrapper.sh
 fi
 
 # Moooo

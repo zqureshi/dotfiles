@@ -132,3 +132,5 @@ fi
 if [[ -o login ]]; then
   (fortune -s | cowsay | lolcat) 2>/dev/null
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

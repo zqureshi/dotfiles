@@ -54,7 +54,7 @@ function _clone() {
     return
   fi
 
-  git clone git@github.com:Shopify/$1
+  git clone git@github.com:Shopify/$1 $2
 }
 
 function _agent() {

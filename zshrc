@@ -76,6 +76,12 @@ function _pretty_json() {
   $CAT_TOOL "$1" | python -m json.tool
 }
 
+function _yolo() {
+  print 'Running `git push -f`, press [Enter] to continue...'
+  read -q
+  git push -f
+}
+
 ## Aliases
 
 # General
@@ -100,6 +106,7 @@ alias add='git add'
 alias brv='git br -vv'
 alias amend='git commit --amend --no-edit'
 alias clone='_clone'
+alias yolo='_yolo'
 
 # Viewing Data
 alias j='_pretty_json'

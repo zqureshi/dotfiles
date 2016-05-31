@@ -119,7 +119,7 @@ if [ "$SYSTEM" != 'MAC' ]; then
 else
   # System is a Mac
   # Prefer Homebrew binaries to system
-  export PATH="/usr/local/bin:$PATH"
+  export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 
   # Enable CLI Colouring
   export CLICOLOR=1

@@ -107,6 +107,7 @@ alias brv='git br -vv'
 alias amend='git commit --amend --no-edit'
 alias clone='_clone'
 alias yolo='_yolo'
+alias http="~/.bin/http"
 
 # Viewing Data
 alias j='_pretty_json'

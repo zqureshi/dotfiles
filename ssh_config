@@ -1,4 +1,30 @@
+Host m1
+Hostname management1.hw131.data-chi.shopify.com
+
+Host m6
+Hostname management6.ia131.data-chi.shopify.com
+
+Host m7
+Hostname management7.ia131.data-chi.shopify.com
+
+Host app4
+Hostname brochure-app4.ec2.shopify.com
+
+Host ods1
+Hostname ods1.hu131.data-chi.shopify.com
+
+Host home
+User zeeshan
+Hostname home.zqureshi.in
+Port 8022
+
+Host marcus
+Hostname 192.168.1.2
+User zeeshan
+
 ## Global
+Host *
 IdentityFile ~/.ssh/id_ecdsa
 TCPKeepAlive yes
 ServerAliveInterval 60
+User zeeshan_qureshi

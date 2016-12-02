@@ -10,7 +10,7 @@ ZSH_THEME="fishy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(screen git zsh-syntax-highlighting)
+plugins=(screen git zsh-syntax-highlighting zsh-nvm)
 
 # Comment this out to disable weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
@@ -54,7 +54,12 @@ function _clone() {
     return
   fi
 
-  git clone git@github.com:Shopify/$1 $2
+  # If string contains a / then
+  if [[ "$1" == *"/"* ]]; then
+    git clone git@github.com:$1 $2
+  else
+    git clone git@github.com:Shopify/$1 $2
+  fi
 }
 
 function _agent() {
@@ -89,6 +94,9 @@ alias pd='pushd'
 alias v='vim'
 alias tm=_tm
 alias agent='_agent'
+alias be='bundle exec'
+alias knife="BUNDLE_GEMFILE=/Users/zeeshan/.chef/Gemfile bundle exec knife"
+alias http="~/.bin/http"
 
 # Git
 alias g='git'
@@ -107,7 +115,7 @@ alias brv='git br -vv'
 alias amend='git commit --amend --no-edit'
 alias clone='_clone'
 alias yolo='_yolo'
-alias http="~/.bin/http"
+alias cr='git push -u origin head'
 
 # Viewing Data
 alias j='_pretty_json'
@@ -142,3 +150,7 @@ if [[ -o login ]]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+
+export PATH="$HOME/.yarn/bin:$PATH"

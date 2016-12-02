@@ -11,6 +11,8 @@
 	default = upstream
 [log]
 	decorate = short
+[rebase]
+  autoSquash = true
 [alias]
   co = checkout
   cp = cherry-pick

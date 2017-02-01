@@ -28,8 +28,11 @@ else
   SYSTEM='LINUX'
 fi
 
+if [[ "$TERM" != 'screen-256color' ]]; then
+  export TERM='xterm-256color'
+fi
+
 ## Variables
-export TERM='xterm-256color'
 export EDITOR='vim'
 export LESS='-I -R'
 

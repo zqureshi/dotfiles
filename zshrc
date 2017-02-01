@@ -98,6 +98,9 @@ alias be='bundle exec'
 alias knife="BUNDLE_GEMFILE=/Users/zeeshan/.chef/Gemfile bundle exec knife"
 alias http="~/.bin/http"
 
+# Java
+alias maven='mvn'
+
 # Git
 alias g='git'
 alias l='git log'
@@ -134,6 +137,12 @@ else
 
   # Java for data team.
   export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+  ## Hadoop
+  CDH_HOME='/Users/zeeshan/Hadoop'
+  export HADOOP_HOME="${CDH_HOME}/hadoop"
+
+  export PATH="${HADOOP_HOME}/bin:${HADOOP_HOME}:/sbin:${PATH}"
 
   # chruby version manager
   source /usr/local/opt/chruby/share/chruby/chruby.sh

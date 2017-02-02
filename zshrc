@@ -36,12 +36,25 @@ fi
 export EDITOR='vim'
 export LESS='-I -R'
 
+## Shell Functions
+
+function _tm() {
+  if [[ -z "$1" ]]; then
+    SESSION="${PWD:t:s/.//}"
+  else
+    SESSION="$1"
+  fi
+
+  tmux new -A -s "$SESSION"
+}
+
 ## Aliases
 
 # General
 alias -g ack='ack-grep'
 alias pd='pushd'
 alias v='vim'
+alias tm=_tm
 
 # Git
 alias g='git'

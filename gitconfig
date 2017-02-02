@@ -1,5 +1,7 @@
 [color]
 	ui = always
+[commit]
+  gpgSign = true
 [user]
 	name = Zeeshan Qureshi
 	email = zee@zqureshi.in

@@ -8,14 +8,15 @@ call plug#begin('~/.vim/bundle')
 
 " Plugins
 Plug 'bling/vim-bufferline'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf',
+  \ { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'rstacruz/sparkup',
-  \ {'for': 'html'}
+  \ { 'for': 'html' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/YouCompleteMe',
-  \ {'do': './install.py'}
+  \ { 'do': './install.py' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 

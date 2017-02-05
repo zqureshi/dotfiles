@@ -13,7 +13,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'rstacruz/sparkup',
   \ {'for': 'html'}
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/YouCompleteMe',
   \ {'do': './install.py'}

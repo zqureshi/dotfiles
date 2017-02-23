@@ -40,7 +40,7 @@ export LESS='-I -R'
 
 function _tm() {
   if [[ -z "$1" ]]; then
-    SESSION="${PWD:t:s/.//}"
+    SESSION="${PWD:t:gs/./-/}"
   else
     SESSION="$1"
   fi

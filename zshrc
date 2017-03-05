@@ -162,4 +162,4 @@ fi
 
 #[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
-export PATH="$HOME/.yarn/bin:$PATH"
+#export PATH="$HOME/.yarn/bin:$PATH"

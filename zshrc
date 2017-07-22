@@ -163,7 +163,7 @@ else
 
   # virtualenv locations
   export WORKON_HOME='~/.virtualenvs'
-  source $(brew --prefix)/bin/virtualenvwrapper.sh
+  #source $(brew --prefix)/bin/virtualenvwrapper.sh
 fi
 
 # Moooo

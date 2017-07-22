@@ -1,3 +1,8 @@
+# Tracing
+#PS4=$'%D{%M%S%.} %N:%i> '
+#exec 3>&2 2>$HOME/startlog.$$
+#set -xo prompt_subst
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -163,3 +168,5 @@ fi
 #[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
 #export PATH="$HOME/.yarn/bin:$PATH"
+#unsetopt xtrace
+#exec 2>&3 3>&-

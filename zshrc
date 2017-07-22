@@ -15,7 +15,7 @@ ZSH_THEME="fishy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(screen git zsh-syntax-highlighting zsh-nvm)
+plugins=(screen git zsh-syntax-highlighting)
 
 # Comment this out to disable weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"

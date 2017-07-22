@@ -92,6 +92,13 @@ function _yolo() {
   git push -f
 }
 
+# Lazily load nvm
+function _nvm() {
+  unalias nvm
+  source $HOME/.nvm/nvm.sh
+  nvm $@
+}
+
 ## Aliases
 
 # General
@@ -102,6 +109,7 @@ alias agent='_agent'
 alias be='bundle exec'
 alias knife="BUNDLE_GEMFILE=/Users/zeeshan/.chef/Gemfile bundle exec knife"
 alias http="~/.bin/http"
+alias nvm='_nvm'
 
 # Java
 alias maven='mvn'

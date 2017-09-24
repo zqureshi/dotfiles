@@ -178,8 +178,6 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-#[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
-
 #export PATH="$HOME/.yarn/bin:$PATH"
 #unsetopt xtrace
 #exec 2>&3 3>&-

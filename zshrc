@@ -75,6 +75,10 @@ alias amend='git commit --amend --no-edit'
 if [ "$SYSTEM" != 'MAC' ]; then
   alias ls='ls --color'
   alias R='R --vanilla --silent'
+
+  # golang
+  export GOPATH="${HOME}/go"
+  export PATH="${GOPATH}/bin:${PATH}"
 else
   # System is a Mac
   # Prefer Homebrew binaries to system

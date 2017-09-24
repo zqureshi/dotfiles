@@ -109,6 +109,7 @@ alias agent='_agent'
 alias be='bundle exec'
 alias knife="BUNDLE_GEMFILE=/Users/zeeshan/.chef/Gemfile bundle exec knife"
 alias http="~/.bin/http"
+alias ipython="~/.bin/ipython"
 alias nvm='_nvm'
 
 # Java

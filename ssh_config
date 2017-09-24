@@ -25,6 +25,10 @@ Host marcus
 Hostname 192.168.1.2
 User zeeshan
 
+Host docker
+Hostname 192.168.1.3
+User zeeshan
+
 ## Global
 Host *
 IdentityFile ~/.ssh/id_ecdsa

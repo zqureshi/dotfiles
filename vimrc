@@ -85,6 +85,9 @@ autocmd FileType c setlocal cindent
 " Disable smartindent for python since it doesn't work well with comments
 autocmd FileType python setlocal nosmartindent
 
+" Prefer tabs for golang
+autocmd FileType go setlocal noexpandtab
+
 "" Commands
 
 " Quickopen style shortcut for FZF

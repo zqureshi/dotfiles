@@ -165,6 +165,10 @@ else
   # virtualenv locations
   export WORKON_HOME='~/.virtualenvs'
   #source $(brew --prefix)/bin/virtualenvwrapper.sh
+
+  # golang
+  export GOPATH="${HOME}/go"
+  export PATH="${GOPATH}/bin:${PATH}"
 fi
 
 # Moooo

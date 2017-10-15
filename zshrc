@@ -112,6 +112,9 @@ alias http="~/.bin/http"
 alias ipython="~/.bin/ipython"
 alias nvm='_nvm'
 
+# Golang
+alias gf='gofmt -w .'
+
 # Java
 alias maven='mvn'
 

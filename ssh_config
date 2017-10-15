@@ -16,22 +16,23 @@ Hostname brochure-app4.ec2.shopify.com
 Host ods1
 Hostname ods1.hu131.data-chi.shopify.com
 
-Host home
-User zeeshan
+Host docker
+Hostname 192.168.1.3
+ProxyJump home
+
+Match host home !exec "ifconfig en0 | egrep 'inet 192.168.1'"
 Hostname home.zqureshi.in
 Port 8022
 
-Host marcus
+Match host home exec "ifconfig en0 | egrep 'inet 192.168.1'"
 Hostname 192.168.1.2
-User zeeshan
 
-Host docker
-Hostname 192.168.1.3
-User zeeshan
+## Shopify
+Match host *.shopify.com,*.shopifydc.com
+User zeeshan_qureshi
 
 ## Global
 Host *
 IdentityFile ~/.ssh/id_ecdsa
 TCPKeepAlive yes
 ServerAliveInterval 60
-User zeeshan_qureshi

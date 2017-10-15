@@ -56,6 +56,9 @@ alias pd='pushd'
 alias v='vim'
 alias tm=_tm
 
+# Golang
+alias gf='gofmt -w .'
+
 # Git
 alias g='git'
 alias l='git log'

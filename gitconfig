@@ -23,3 +23,7 @@
   dc = diff --cached
   pr = pull --rebase
   sub = submodule
+
+; Uncomment this if you want to force SSH for all HTTPS clones
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/

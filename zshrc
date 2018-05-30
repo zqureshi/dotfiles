@@ -51,7 +51,6 @@ function _tm() {
 ## Aliases
 
 # General
-alias -g ack='ack-grep'
 alias pd='pushd'
 alias v='vim'
 alias tm=_tm
@@ -63,6 +62,7 @@ alias gf='gofmt -w .'
 alias g='git'
 alias l='git log'
 alias m='git co master'
+alias p='g pr'
 alias lm='git log master'
 alias st='git st'
 alias br='git br'
@@ -73,6 +73,7 @@ alias ci='git ci'
 alias add='git add'
 alias brv='git br -vv'
 alias amend='git commit --amend --no-edit'
+alias cr='git push -u origin head'
 
 # Mac
 if [ "$SYSTEM" != 'MAC' ]; then

@@ -1,0 +1,13 @@
+window-colorspace = display-p3
+window-decoration = none
+
+background-blur = true
+background-opacity = 0.95
+background = black
+
+cursor-style = block
+
+font-family = "Monaco"
+font-size = 15
+
+theme = "iTerm2 Dark Background"

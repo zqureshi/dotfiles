@@ -23,3 +23,5 @@
   dc = diff --cached
   pr = pull --rebase
   sub = submodule
+[pager]
+	branch = false
